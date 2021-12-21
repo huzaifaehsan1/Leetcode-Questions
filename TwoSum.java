@@ -8,7 +8,9 @@
 
 class TwoSum{
   public static void main(String[] args){
-
+    int[] numbers = {3,5,6,7,8};
+    int[] ans = twoSum(numbers, 10);
+    System.out.println(ans);
   }
 
 
