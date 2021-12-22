@@ -5,16 +5,15 @@
 //Output: [0,1]
 //Output: Because nums[0] + nums[1] == 9, we return [0, 1].
 
-
+import java.util.*;
 class TwoSum{
   public static void main(String[] args){
-    int[] numbers = {3,5,6,7,8};
-    int[] ans = twoSum(numbers, 10);
-    System.out.println(ans);
+    System.out.println(Arrays.toString(
+      twoSum(new int[]{3, 6, 10, 14}, 9))); // [6, 3] best case 
   }
 
 
-  public int[] twoSum(int[] numbers, int target) {
+  public static int[] twoSum(int[] numbers, int target) {
     int[] result = new int[2];
     Map<Integer, Integer> map = new HashMap<Integer, Integer>();
     for (int i = 0; i < numbers.length; i++) {
